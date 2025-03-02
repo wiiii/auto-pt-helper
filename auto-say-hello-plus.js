@@ -45,6 +45,7 @@
 // @match        *://audiences.me/details.php*
 // @match        *://xingtan.one/details.php*
 // @match        *://www.nicept.net/details.php*
+// @match        *://tmpt.top/details.php*
 // @grant        none
 // ==/UserScript==
 
@@ -84,9 +85,10 @@
         "audiences.me",
         "xingtan.one",
         "www.nicept.net",
+        "tmpt.top",
       ],
       action: () => {
-        wait(5000).then(() => {
+        wait(3000).then(() => {
           const sayThanksButton = document.getElementById("saythanks");
           if (sayThanksButton && !sayThanksButton.disabled) {
             console.log("~~~说谢谢~~~");
