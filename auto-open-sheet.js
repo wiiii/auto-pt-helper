@@ -41,6 +41,7 @@
 // @match        *://www.dragonhd.xyz/torrents.php*
 // @match        *://chdbits.co/torrents.php*
 // @match        *://www.nicept.net/torrents.php*
+// @match        *://tmpt.top/torrents.php*
 // @grant        none
 // ==/UserScript==
 
