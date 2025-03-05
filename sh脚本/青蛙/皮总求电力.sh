@@ -2,6 +2,7 @@
 
 # 定义变量
 COOKIE="填写自己的cookie"
+CALL_TYPE="蛙总，求上传"
 
 mkdir -p /home/qingwa
 
@@ -9,9 +10,9 @@ echo > /home/qingwa/index.html
 
 chmod -R 777 /home/qingwa/*
 
-# 释放技能
-curl -X GET "https://zmpt.cc/shoutbox.php" \
---data-urlencode "shbox_text=蛙总，求上传" \
+# 求上传
+curl -X GET "https://qingwa.pt/shoutbox.php" \
+--data-urlencode "shbox_text=$CALL_TYPE" \
 --data-urlencode "shout=我喊" \
 --data-urlencode "sent=yes" \
 --data-urlencode "type=shoutbox" \
