@@ -11,7 +11,7 @@ echo > /home/qingwa/index.html
 chmod -R 777 /home/qingwa/*
 
 # 求上传
-curl -X GET "https://qingwa.pt/shoutbox.php" \
+curl -X GET "https://qingwapt.com/shoutbox.php" \
 --data-urlencode "shbox_text=$CALL_TYPE" \
 --data-urlencode "shout=我喊" \
 --data-urlencode "sent=yes" \
