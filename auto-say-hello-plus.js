@@ -46,6 +46,7 @@
 // @match        *://xingtan.one/details.php*
 // @match        *://www.nicept.net/details.php*
 // @match        *://tmpt.top/details.php*
+// @match        *://open.cd/*.php*
 // @grant        none
 // ==/UserScript==
 
@@ -86,6 +87,7 @@
         "xingtan.one",
         "www.nicept.net",
         "tmpt.top",
+        "open.cd",
       ],
       action: () => {
         wait(3000).then(() => {

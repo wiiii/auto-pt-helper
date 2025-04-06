@@ -42,6 +42,7 @@
 // @match        *://chdbits.co/torrents.php*
 // @match        *://www.nicept.net/torrents.php*
 // @match        *://tmpt.top/torrents.php*
+// @match        *://open.cd/torrents.php*
 // @grant        none
 // ==/UserScript==
 
@@ -55,7 +56,7 @@
     const maxIntervalTime = 300; // 每次打开的最大间隔（毫秒）
     const storageKey = 'openedLinks'; // localStorage 键名，用于记录已打开的链接
     const userPromptKey = 'userPrompt'; // localStorage 键名，用于记录用户选择和时间
-    const regex = /^details\.php\?id=(\d+)&hit=1$/; // 链接匹配规则
+    const regex = /details\.php\?id=(\d+)/; // 链接匹配规则
 
     // 辅助函数：获取当前时间的时间戳
     function getCurrentTimestamp() {
