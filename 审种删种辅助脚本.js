@@ -9,7 +9,8 @@
 // @email        960487551@qq.com
 // @copyright (c) 2025年4月12日22:04:30
 // @match        *://*.cspt.top/*
-// @match        *://*.bbpt.top/*
+// @match        *://*.cspt.cc/*
+// @match        *://*.cspt.date/*
 // @grant        none
 // @license      MIT
 // ==/UserScript==
@@ -23,6 +24,16 @@
     // 配置类，根据不同站点设置不同的 URL
     const siteConfig = {
         "cspt.top": {
+            wshURL: "/torrents.php?inclbookmarked=0&incldead=1&spstate=0&approval_status=0",
+            fjdzURL: "/torrents.php?inclbookmarked=0&incldead=2&spstate=0&tag_id=21",
+            fjURL: "/torrents.php?tag_id=21"
+        },
+        "cspt.cc": {
+            wshURL: "/torrents.php?inclbookmarked=0&incldead=1&spstate=0&approval_status=0",
+            fjdzURL: "/torrents.php?inclbookmarked=0&incldead=2&spstate=0&tag_id=21",
+            fjURL: "/torrents.php?tag_id=21"
+        },
+        "cspt.date": {
             wshURL: "/torrents.php?inclbookmarked=0&incldead=1&spstate=0&approval_status=0",
             fjdzURL: "/torrents.php?inclbookmarked=0&incldead=2&spstate=0&tag_id=21",
             fjURL: "/torrents.php?tag_id=21"
